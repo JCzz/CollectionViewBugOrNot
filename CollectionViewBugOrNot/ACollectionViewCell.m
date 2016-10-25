@@ -12,4 +12,17 @@
 
 //@synthesize cellSize=_cellSize;
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self)
+    {
+        // change to our custom selected background view
+        UIView *bcgView = [[UIView alloc] initWithFrame:CGRectZero];
+        bcgView.backgroundColor = [UIColor darkGrayColor];
+        self.selectedBackgroundView = bcgView;
+    }
+    return self;
+}
+
 @end

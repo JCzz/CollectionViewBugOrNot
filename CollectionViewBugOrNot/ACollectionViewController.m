@@ -13,6 +13,7 @@
 
 @implementation ACollectionViewController{
     int number;
+    NSArray *array;
 }
 
 - (void)viewDidLoad {
@@ -20,6 +21,7 @@
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
 
+    array = @[@1,@2,@3];
     
 //    self.collectionView.contentInset = UIEdgeInsetsMake(20.0f, 0.0f, 0.0f, 0.0f);
     number = 0;
@@ -38,8 +40,7 @@
 {
     ACollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"cellid" forIndexPath:indexPath];
     
-//    cell.cellSize = CGSizeMake(100, 100);; // [self getSize];
-    
+    cell.cellSize = [self getSize:indexPath.row];
     return cell;
 }
 
@@ -49,19 +50,34 @@
     ACollectionViewCell *cell = (ACollectionViewCell*)[self.collectionView cellForItemAtIndexPath:indexPath];
     
     CGSize cellSize = CGSizeZero;
-//    if (!CGSizeEqualToSize(cell.cellSize, CGSizeZero)){
-    
     if (cell!=nil){
         cellSize = cell.cellSize;
     }else{
-        cellSize = CGSizeMake(100, 100); //[self getSize];
+        cellSize = [self getSize:indexPath.row]; // CGSizeMake(100, 100);
     }
     
-    return CGSizeMake(100, 100);
+    return cellSize;
 }
 
-- (CGSize)getSize{
-    return CGSizeMake(100, 100);
+- (CGSize)getSize:(NSInteger) row{
+
+    switch (row) {
+        case 0:
+            return CGSizeMake(100, 100);
+            break;
+
+        case 1:
+            return CGSizeMake(200, 100);
+            break;
+
+        case 2:
+            return CGSizeMake(300, 100);
+            break;
+            
+        default:
+            return CGSizeMake(10, 10);
+            break;
+    }
 }
 
 - (void)collectionView:(UICollectionView *)collectionView

@@ -14,6 +14,8 @@
 		FAE4ADCF1DBF875D0033E9AD /* CollectionViewBugOrNot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAE4ADCD1DBF875D0033E9AD /* CollectionViewBugOrNot.xcdatamodeld */; };
 		FAE4ADD11DBF875D0033E9AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE4ADD01DBF875D0033E9AD /* Assets.xcassets */; };
 		FAE4ADD41DBF875D0033E9AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE4ADD21DBF875D0033E9AD /* LaunchScreen.storyboard */; };
+		FAE4ADDF1DBF87C40033E9AD /* ACollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE4ADDC1DBF87C40033E9AD /* ACollectionViewCell.m */; };
+		FAE4ADE01DBF87C40033E9AD /* ACollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE4ADDE1DBF87C40033E9AD /* ACollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		FAE4ADD01DBF875D0033E9AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAE4ADD31DBF875D0033E9AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAE4ADD51DBF875D0033E9AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE4ADDB1DBF87C40033E9AD /* ACollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACollectionViewCell.h; sourceTree = "<group>"; };
+		FAE4ADDC1DBF87C40033E9AD /* ACollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACollectionViewCell.m; sourceTree = "<group>"; };
+		FAE4ADDD1DBF87C40033E9AD /* ACollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACollectionViewController.h; sourceTree = "<group>"; };
+		FAE4ADDE1DBF87C40033E9AD /* ACollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				FAE4ADC41DBF875D0033E9AD /* AppDelegate.h */,
+				FAE4ADDB1DBF87C40033E9AD /* ACollectionViewCell.h */,
+				FAE4ADDC1DBF87C40033E9AD /* ACollectionViewCell.m */,
+				FAE4ADDD1DBF87C40033E9AD /* ACollectionViewController.h */,
+				FAE4ADDE1DBF87C40033E9AD /* ACollectionViewController.m */,
 				FAE4ADC51DBF875D0033E9AD /* AppDelegate.m */,
 				FAE4ADC71DBF875D0033E9AD /* ViewController.h */,
 				FAE4ADC81DBF875D0033E9AD /* ViewController.m */,
@@ -113,7 +123,7 @@
 				TargetAttributes = {
 					FAE4ADBD1DBF875D0033E9AD = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 58AT3C5Q69;
+						DevelopmentTeam = VYXT57LFMF;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -156,7 +166,9 @@
 			files = (
 				FAE4ADC91DBF875D0033E9AD /* ViewController.m in Sources */,
 				FAE4ADC61DBF875D0033E9AD /* AppDelegate.m in Sources */,
+				FAE4ADE01DBF87C40033E9AD /* ACollectionViewController.m in Sources */,
 				FAE4ADCF1DBF875D0033E9AD /* CollectionViewBugOrNot.xcdatamodeld in Sources */,
+				FAE4ADDF1DBF87C40033E9AD /* ACollectionViewCell.m in Sources */,
 				FAE4ADC31DBF875D0033E9AD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,7 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 58AT3C5Q69;
+				DEVELOPMENT_TEAM = VYXT57LFMF;
 				INFOPLIST_FILE = CollectionViewBugOrNot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.CollectionViewBugOrNot;
@@ -289,7 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 58AT3C5Q69;
+				DEVELOPMENT_TEAM = VYXT57LFMF;
 				INFOPLIST_FILE = CollectionViewBugOrNot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.CollectionViewBugOrNot;
